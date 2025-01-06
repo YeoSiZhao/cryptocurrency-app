@@ -1,0 +1,21 @@
+.coin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-width: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.coin-container:hover {
+    background-color: rgb(165, 100, 212);
+}
+
+.image {
+    width: 100px;
+}
