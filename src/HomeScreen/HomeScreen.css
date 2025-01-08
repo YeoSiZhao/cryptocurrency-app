@@ -1,16 +1,10 @@
-.main-cointainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .main-header {
     text-align: center;
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 15px;
+    color: whitesmoke;
 }
 
 .search-container{
@@ -20,3 +14,4 @@
     gap:10px;
     margin-bottom: 10px;
 }
+

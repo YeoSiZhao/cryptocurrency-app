@@ -12,7 +12,10 @@ function Search({ search,onSearchChange }) {
         className="search-bar" 
         onChange={(e) => onSearchChange(e)}>
     </input> 
-    <SearchRoundedIcon/>
+    <div className='search-icon'>
+        <SearchRoundedIcon/>
+    </div>
+
     </div>
     </>)
 

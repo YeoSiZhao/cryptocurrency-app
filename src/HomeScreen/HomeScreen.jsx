@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react"
 import Axios from "axios"
-import Coin from "../Components/coin"
 import './HomeScreen.css'
 import Search from "../Components/search";
+import BackToTop from "../Components/top/top";
+import CenteredTabs from "../tabs/coin-page"
+
 
 function HomeScreen() {
     const [coins, setCoins] = useState([]);
@@ -34,8 +36,6 @@ function HomeScreen() {
       items.name.toLowerCase().includes(search.toLowerCase()) ||
       items.symbol.toLowerCase().includes(search.toLowerCase())
     );
-
-    console.log(filteredCoins);
   
     if (isLoading) {
       return <div>Loading...</div>; 
@@ -44,7 +44,6 @@ function HomeScreen() {
     if (error) {
       return <div>Error: {error.message}</div>; 
     }
-  
     return (
       <>
       <h1 className="main-header"> Cryptocurrency</h1>
@@ -52,22 +51,11 @@ function HomeScreen() {
       <div className="search-container"> 
         <Search search={search} onSearchChange={onSearchChange}/>
       </div>
-
-      <div className="main-cointainer">
-        {filteredCoins.map((coin) => (
-          <Coin
-            key={coin.id}
-            id={coin.id}
-            name={coin.name}
-            image={coin.image}
-            symbol={coin.symbol}
-            volume={coin.total_volume} 
-            price={coin.current_price} 
-            priceChange={coin.price_change_percentage_24h}
-            marketCap={coin.market_cap}
-          />
-        ))}
+      <div>
+          <CenteredTabs 
+            filteredCoins={filteredCoins}/>
       </div>
+      <BackToTop/>
       </>
       
     );

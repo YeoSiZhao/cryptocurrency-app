@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import './coin.css'
+import './coin-grid.css'
 
-function Coin(props){
+function CoinGrid(props){
     return(
         <div className='coin-container'>
             <img src ={props.image} className='image'></img>
@@ -19,4 +19,4 @@ function Coin(props){
     )
 }
 
-export default Coin
+export default CoinGrid

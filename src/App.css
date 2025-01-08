@@ -5,5 +5,9 @@
 }
 
 body {
-    background-image: linear-gradient(to right, white,rgb(165, 100, 212) );
+    background-color: hsl(0, 0%, 20%);
+}
+
+html {
+    scroll-behavior: smooth;
 }

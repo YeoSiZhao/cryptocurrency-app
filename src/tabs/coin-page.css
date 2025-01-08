@@ -1,0 +1,34 @@
+.main-coin-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.coin-table {
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .coin-table th,
+  .coin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .coin-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .coin-table tr:hover {
+    background-color: hsl(0, 0%, 70%);
+  }
+  

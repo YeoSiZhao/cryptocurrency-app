@@ -1,0 +1,10 @@
+.list-image{
+    width: 30px;
+    margin-left: 10px
+}
+
+.align-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -17,6 +17,10 @@
     border-color: rgb(165, 100, 212); /* Optional: focus effect */
 }
 
+.search-icon{
+    color:white;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;

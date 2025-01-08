@@ -1,0 +1,19 @@
+.back-to-top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    border-color:  rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
