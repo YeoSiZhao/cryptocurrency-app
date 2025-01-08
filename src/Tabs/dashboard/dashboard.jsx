@@ -1,12 +1,17 @@
 import { useState, useEffect } from "react"
-import Axios from "axios"
-import './HomeScreen.css'
-import Search from "../Components/search";
-import BackToTop from "../Components/top/top";
-import CenteredTabs from "../tabs/coin-page"
+import Axios from "axios" // npm install axios
+import './dashboard.css';
+import Search from "../../Functions/search/search";
+import BackToTop from "../../Functions/top/top";
+import CoinPage from "./coin-page";
+import Headers from "../../Components/headers/headers";
+// npm install @mui/material @emotion/react @emotion/styled 
+// npm install @mui/icons-material @mui/material @emotion/styled @emotion/react for Icons
+// npm i react-router-dom for routing 
+//npm i #mui/lab for Tabs
 
 
-function HomeScreen() {
+function DashBoard() {
     const [coins, setCoins] = useState([]);
     const [isLoading, setIsLoading] = useState(true); // Add a loading state
     const [error, setError] = useState(null); // Add an error state
@@ -46,13 +51,14 @@ function HomeScreen() {
     }
     return (
       <>
-      <h1 className="main-header"> Cryptocurrency</h1>
+      <Headers/>
+      <h1 className="main-header"> Dashboard</h1>
 
       <div className="search-container"> 
         <Search search={search} onSearchChange={onSearchChange}/>
       </div>
       <div>
-          <CenteredTabs 
+          <CoinPage 
             filteredCoins={filteredCoins}/>
       </div>
       <BackToTop/>
@@ -61,4 +67,4 @@ function HomeScreen() {
     );
   }
   
-  export default HomeScreen;
+  export default DashBoard

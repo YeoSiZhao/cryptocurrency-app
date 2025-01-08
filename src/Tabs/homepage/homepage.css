@@ -1,0 +1,18 @@
+.header-text {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding for smaller screens */
+}
+.body-text {
+    color: white;
+    font-size: large;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+}

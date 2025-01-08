@@ -4,11 +4,11 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import CoinGrid from "../Components/coin-grid/coin-grid";
-import CoinList from "../Components/coin-list/coin-list";
+import CoinGrid from "../../Components/coin-grid/coin-grid";
+import CoinList from "../../Components/coin-list/coin-list";
 import './coin-page.css';
 
-export default function CenteredTabs({ filteredCoins }) {
+export default function CoinPage({ filteredCoins }) {
   const [value, setValue] = useState("grid");
 
   const handleChange = (event, newValue) => {
