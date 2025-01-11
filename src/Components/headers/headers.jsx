@@ -8,7 +8,7 @@ function Headers() {
         CryptoTracker
       </div>
       <div className='tabs'>
-      <Link to="/homepage">
+      <Link to="/">
       <p className='link'>Homepage</p>
       </Link>
 
