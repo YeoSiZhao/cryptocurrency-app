@@ -8,7 +8,7 @@ import Headers from "../../Components/headers/headers";
 // npm install @mui/material @emotion/react @emotion/styled 
 // npm install @mui/icons-material @mui/material @emotion/styled @emotion/react for Icons
 // npm i react-router-dom for routing 
-//npm i #mui/lab for Tabs
+// npm i @mui/lab for Tabs
 
 
 function DashBoard() {
